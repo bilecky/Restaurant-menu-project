@@ -11,24 +11,39 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css"><link>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"
+    />
+  </head>
   <body>
     <!-- menu -->
     <section class="menu">
       <!-- title -->
       <div class="title">
-        <h2>our menu</h2>
+        <h2>our mnu</h2>
         <div class="underline"></div>
       </div>
       <!-- buttons -->
+      <div class="btn-container">
+        <button class="filter-btn" type="button" data-id = "all">all</button>
+        <button class="filter-btn" type="button" data-id = "breakfast">drugie</button>
+        <button class="filter-btn" type="button" data-id = "lunch">trzeci</button>
+        <button class="filter-btn" type="button" data-id = "shakes">czwartyy</button>
+      </div>
+     
+      <input
+      type="text"
+      name="searchBar"
+      id="searchBar"
+      placeholder="search for a character"
+  />
+     
+
       <!-- items -->
       <div class="section-center"></div>
       <!-- single item -->
-<article class="menu-item">
-    <img src="" alt="">
-</article>
     </section>
 
     <script src="app.js"></script>
