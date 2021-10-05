@@ -76,6 +76,7 @@ const menu = [
 const mainSection = document.querySelector(".section-center");
 
 const filterButtons = document.querySelectorAll(".filter-btn");
+TweenMax.set("article", { visibility: "visible" });
 
 function displayMenu(menuItems) {
   let displayMenu = menuItems.map((element) => {
@@ -94,6 +95,7 @@ function displayMenu(menuItems) {
   });
 
   displayMenu = displayMenu.join("");
+  TweenMax.set("article", { visibility: "visible" });
 
   mainSection.innerHTML = displayMenu;
 }
@@ -114,22 +116,39 @@ filterButtons.forEach((btn) => {
     } else {
       displayMenu(menuCategory);
     }
+    TweenMax.set("article", { visibility: "visible" });
+    TweenMax.staggerFrom("article", 0.5, { x: 130, opacity: 0, delay: 0.5 }, 0.3);
   });
 });
 
 //load items
 window.addEventListener("DOMContentLoaded", function () {
+  
   displayMenu(menu);
 });
 //filter items
 
 const searchBar = document.getElementById("searchBar");
-
 searchBar.addEventListener("keyup", (e) => {
+  const article = document.querySelector('.menu-item')
+  
+
+  
+
   const searchString = e.target.value.toLowerCase();
 
   const filter = menu.filter((filteredItem) => {
+
     return filteredItem.title.toLowerCase().includes(searchString);
   });
   displayMenu(filter);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  window.addEventListener("load", function () {
+    TweenMax.set("article", { visibility: "visible" });
+    TweenMax.staggerFrom("article", 0.5, { x: 130, opacity: 0, delay: 1 }, 0.4);
+  });
 });
