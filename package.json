@@ -2,7 +2,7 @@
   "name": "y",
   "version": "1.0.0",
   "description": "Menu made in pure JS with submenus. Elements are dynamically updated",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
