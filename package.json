@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Menu made in pure JS with submenus. Elements are dynamically updated",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilecky/Restaurant-menu-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilecky/Restaurant-menu-project/issues"
+  },
+  "homepage": "https://github.com/bilecky/Restaurant-menu-project#readme"
+}
