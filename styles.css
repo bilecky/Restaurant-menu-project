@@ -126,12 +126,11 @@ Menu
   letter-spacing: 1px;
   padding: 0.375rem 0.75rem;
   cursor: pointer;
-  p
+  transition: 0.4s;
  
 }
 .filter-btn:hover {
-  background: 
-  color: 
+  background: grey;
 }
 .section-center {
   width: 90vw;
@@ -180,7 +179,7 @@ Menu
     margin-bottom: 40px;
     width: 15%;
     height: 40px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
 @media screen and (min-width: 768px) {

@@ -139,8 +139,6 @@ const searchBar = document.getElementById("searchBar");
 searchBar.addEventListener("keyup", (e) => {
   const article = document.querySelector(".menu-item");
 
-  article.style.visibility = "visible";
-
   const searchString = e.target.value.toLowerCase();
 
   const filter = menu.filter((filteredItem) => {
