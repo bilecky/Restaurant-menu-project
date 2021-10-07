@@ -1,4 +1,4 @@
-# Restaurant-menu-project
+# Restaurant project
 
     Live demo: <a href="https://bilecky.github.io/Restaurant-menu-project/">CLICK ME</a>
 
